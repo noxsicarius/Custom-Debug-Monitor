@@ -25,11 +25,11 @@ This is a debug menu I have created and I figured it would be of use to some of 
 	> 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
 	> 	~~~~
 
-	> And replace it with this:
+	> 	And replace it with this:
 
-	> 	~~~~java
-	> 	call compile preprocessFileLineNumbers "custom\compiles.sqf";
-	> 	~~~~
+	> 		~~~~java
+	> 		call compile preprocessFileLineNumbers "custom\compiles.sqf";
+	> 		~~~~
 
 	> 1. Copy the ***custom folder*** (in the download) into your mission folder.
 	

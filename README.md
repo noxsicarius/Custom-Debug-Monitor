@@ -6,8 +6,8 @@ This is a debug menu I have created and I figured it would be of use to some of 
 
 
 # Table of Contents:
-* [Epoch 1.0.5.1](https://github.com/noxsicarius/Epoch-Admin-Tools#features)
-* [Epoch 1.0.4.2a](https://github.com/noxsicarius/Epoch-Admin-Tools#installation)
+* [Epoch 1.0.5.1](https://github.com/noxsicarius/Custom-Debug-Monitor/tree/1.0.5.1#for-epoch-1051)
+* [Epoch 1.0.4.2a](https://github.com/noxsicarius/Custom-Debug-Monitor/tree/1.0.4.2#for-epoch-1051)
 
 
 # For Epoch 1.0.5.1
@@ -16,7 +16,7 @@ This is a debug menu I have created and I figured it would be of use to some of 
 ![Debug Monitor](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10492282_780169578712954_6075501529329797732_n.jpg)
 
 
-1. Click ***[Download Zip](https://github.com/noxsicarius/Custom-Debug-Menu/archive/master.zip)*** on the right sidebar of this Github page.
+1. Click ***[Download Zip](https://github.com/noxsicarius/Custom-Debug-Monitor/archive/1.0.5.1.zip)*** on the right sidebar of this Github page.
 
 	> Recommended PBO tool for all "pack", "repack", or "unpack" steps: ***[PBO Manager](http://www.armaholic.com/page.php?id=16369)***
 

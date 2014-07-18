@@ -1,6 +1,7 @@
 Custom Debug Monitor
-(Epoch 1.0.5.1)
 ============
+For Epoch 1.0.5.1
+=======
 
 This is a debug menu I have created and I figured it would be of use to some of you so here it is.
 

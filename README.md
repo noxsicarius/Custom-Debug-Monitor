@@ -38,14 +38,12 @@ This is a debug menu I have created and I figured it would be of use to some of 
 	> 	~~~~java
 	>	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\dayz_spaceInterrupt.sqf";
 	> 	~~~~
-
 	> With this line:
-	
 	> 	~~~~java
 	>	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "custom\dayz_spaceInterrupt.sqf";
 	> 	~~~~
 	
-		> 	Note: If you do not already have this line in your compiles then simply add the new line to your custom compiles.
+	> 	Note: If you do not already have this line in your compiles then simply add the new line to your custom compiles.
 	
 	> 1. Copy the contents of the ***custom folder*** (in the download) into your custom folder ***except for the compiles.sqf***.
 	

@@ -1,4 +1,4 @@
-Custom Debug Menu
+Custom Debug Monitor
 ============
 
 This is a debug menu I have created and I figured it would be of use to some of you so here it is.

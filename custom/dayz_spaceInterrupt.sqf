@@ -121,11 +121,11 @@ if (_dikCode in (actionKeys "GetOver")) then {
 if (_dikCode == 210) then {
 	if (isNil 'debugMonitor') then {
 		debugMonitor = true;
-		_nill = execvm "custom\debug_menu.sqf";
+		_nill = execvm "custom\debug_monitor.sqf";
 	} else {
 		debugMonitor = !debugMonitor;
 		hintSilent '';
-		_nill = execvm "custom\debug_menu.sqf";
+		_nill = execvm "custom\debug_monitor.sqf";
 	};
 };
 

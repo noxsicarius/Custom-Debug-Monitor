@@ -1,9 +1,16 @@
 Custom Debug Monitor
 ============
-For Epoch 1.0.5.1
-=======
+
 
 This is a debug menu I have created and I figured it would be of use to some of you so here it is.
+
+
+# Table of Contents:
+* [Epoch 1.0.5.1](https://github.com/noxsicarius/Epoch-Admin-Tools#features)
+* [Epoch 1.0.4.2a](https://github.com/noxsicarius/Epoch-Admin-Tools#installation)
+
+
+# For Epoch 1.0.5.1
 
 
 ![Debug Monitor](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10492282_780169578712954_6075501529329797732_n.jpg)

@@ -7,7 +7,7 @@ This is a debug menu I have created and I figured it would be of use to some of 
 
 # Table of Contents:
 * [Epoch 1.0.5.1](https://github.com/noxsicarius/Custom-Debug-Monitor/tree/1.0.5.1#for-epoch-1051)
-* [Epoch 1.0.4.2a](https://github.com/noxsicarius/Custom-Debug-Monitor/tree/1.0.4.2#for-epoch-1051)
+* [Epoch 1.0.4.2a](https://github.com/noxsicarius/Custom-Debug-Monitor/tree/1.0.4.2#for-epoch-1042a)
 
 
 # For Epoch 1.0.4.2a

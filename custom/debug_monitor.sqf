@@ -21,9 +21,11 @@ while {debugMonitor} do
 		case 0: {_minutes = "00"};
 	};
 	
+	// You can delete the server website here line (entire line) if you want
+	// You can also delete the entire TeamSpeak IP line if you want
 	hintSilent parseText format ["
-		<t size='1.25' font='Bitstream' align='center' color='#5882FA'>Bounty Hunters</t><br/>
-		<t size='1.05' font='Bitstream' align='center' color='#5882FA'>www.bhsquad.com</t><br/>
+		<t size='1.25' font='Bitstream' align='center' color='#5882FA'>Server Name Here</t><br/>
+		<t size='1.05' font='Bitstream' align='center' color='#5882FA'>Server Website Here</t><br/> 
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'></t><t size='0.95 'font='Bitstream' align='right'></t><br/>
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'>Players Online: </t><t size='0.95 'font='Bitstream' align='right'>%1</t><br/>
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'>Murders: </t><t size='0.95' font='Bitstream' align='right'>%3</t><br/>
@@ -33,6 +35,7 @@ while {debugMonitor} do
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'>Blood: </t><t size='0.95' font='Bitstream' align='right'>%5</t><br/>
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'>FPS: </t><t size='0.95' font='Bitstream' align='right'>%7</t><br/>
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'></t><t size='0.95 'font='Bitstream' align='right'></t><br/>
+		<t size='1.15' font='Bitstream'align='center' color='#5882FA'>TeamSpeak IP Here</t><br/>
 		<t size='1.15' font='Bitstream'align='center' color='#5882FA'>Server restart in %8:%9</t><br/>",
 			
 		(count playableUnits),

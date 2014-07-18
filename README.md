@@ -3,6 +3,10 @@ Custom Debug Menu
 
 This is a debug menu I have created and I figured it would be of use to some of you so here it is.
 
+
+![Debug Monitor](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10492282_780169578712954_6075501529329797732_n.jpg)
+
+
 1. Click ***[Download Zip](https://github.com/noxsicarius/Custom-Debug-Menu/archive/master.zip)*** on the right sidebar of this Github page.
 
 	> Recommended PBO tool for all "pack", "repack", or "unpack" steps: ***[PBO Manager](http://www.armaholic.com/page.php?id=16369)***

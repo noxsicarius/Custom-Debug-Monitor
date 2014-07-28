@@ -150,7 +150,7 @@ if (_dikCode in actionKeys "Chat" && (diag_tickTime - dayz_lastCheckBit > 10)) t
 /*
 if (_dikCode in actionKeys "User20" && (diag_tickTime - dayz_lastCheckBit > 5)) then {
 	dayz_lastCheckBit = diag_tickTime;
-	_nill = execvm "\z\addons\dayz_code\actions\debug.sqf";
+	_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 };
 */
 

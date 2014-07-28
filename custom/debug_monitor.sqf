@@ -1,6 +1,3 @@
-//Let Zeds know
-[player,4,true,(getPosATL player)] spawn player_alertZombies;
-
 while {debugMonitor} do
 {
 	_time = (round(180-(serverTime)/60));

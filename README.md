@@ -86,5 +86,6 @@ This is a debug menu I have created and I figured it would be of use to some of 
 		};
 	};
 	~~~~
-  
+	
+1. If you use snap build pro replace the space interrupt file ***[with this one](https://github.com/noxsicarius/SnapPro/blob/debug-compatible/custom/snap_pro/dayz_spaceInterrupt.sqf)***
 1. Package the PBO and send it to the server. Everything is finished.

@@ -12,7 +12,8 @@ This is a debug menu I have created and I figured it would be of use to some of 
 
 # For Epoch 1.0.4.2a
 
-![Debug Monitor](https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10492282_780169578712954_6075501529329797732_n.jpg)
+
+![Debug Monitor](https://scontent-b-atl.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10492282_780169578712954_6075501529329797732_n.jpg?oh=4ac1f02e919557a4bbe02289bad85d65&oe=5502DD57)
 
 
 1. Click ***[Download Zip](https://github.com/noxsicarius/Custom-Debug-Monitor/archive/1.0.4.2.zip)*** on the right sidebar of this Github page.
@@ -85,5 +86,6 @@ This is a debug menu I have created and I figured it would be of use to some of 
 		};
 	};
 	~~~~
-  
+	
+1. If you use snap build pro replace the space interrupt file ***[with this one](https://github.com/noxsicarius/SnapPro/blob/debug-compatible/custom/snap_pro/dayz_spaceInterrupt.sqf)***
 1. Package the PBO and send it to the server. Everything is finished.

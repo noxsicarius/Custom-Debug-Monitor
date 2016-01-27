@@ -1,0 +1,1 @@
+dayz_spaceInterrupt =			compile preprocessFileLineNumbers "custom\debug_monitor\dayz_spaceInterrupt.sqf";

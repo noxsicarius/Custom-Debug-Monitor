@@ -3,7 +3,7 @@ Custom Debug Monitor
 
 This is a debug menu I have created and I figured it would be of use to some of you so here it is.
 
-![Debug Monitor](https://drive.google.com/file/d/0B8-fMeYSKkg_SmhDa214b2pkMGM/view?usp=sharing "Debug Menu")
+![Debug Monitor](http://s28.postimg.org/y9oqotugd/Epoch_debug_monitor.jpg "Debug Menu")
 
 # Table of Contents:
 * [Uninstall old version](https://github.com/noxsicarius/Custom-Debug-Monitor#uninstall-old-version)

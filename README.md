@@ -5,7 +5,7 @@ This is a debug menu I have created and I figured it would be of use to some of 
 
 ![Debug Monitor](http://s28.postimg.org/y9oqotugd/Epoch_debug_monitor.jpg "Debug Menu")
 
-# Table of Contents:
+## Table of Contents:
 * [Uninstall old version](https://github.com/noxsicarius/Custom-Debug-Monitor#uninstall-old-version)
 * [Install](https://github.com/noxsicarius/Custom-Debug-Monitor#install)
 

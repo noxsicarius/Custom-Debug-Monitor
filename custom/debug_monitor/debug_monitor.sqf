@@ -1,13 +1,17 @@
-while {debugMonitor} do
-{
+private["_serverTitle","_serverSubtitle","_teamspeak","_time","_hours","_minutes","_restartTime"];
+
+/************************* CONFIG *************************/
+
 	_serverTitle = "SERVER NAME HERE";
-	_serverSubtitle = "WEBSITE/MESSAGE HERE"; // DELETE line 36 if you don't want this to show
-	_teamspeak = "Teamspeak: TEAMSPEAK IP HERE"; // DELETE line 46 if you don't want this to show
+	_serverSubtitle = "WEBSITE/MESSAGE HERE"; // DELETE line 41 if you don't want this to show
+	_teamspeak = "Teamspeak: TEAMSPEAK IP HERE"; // DELETE line 51 if you don't want this to show
+	_restartTime = 180 //total time before server restart (3hrs = 180 minutes)
 	
-	//Change MINUTES to total time before server restart
-	//Want it to count up instead of down? use _time = (round serverTime)/60;
-	//_time = (round(MINUTES-(serverTime)/60));
-	_time = (round(180-(serverTime)/60)); // EDIT THIS LINE TO CHANGE SERVER TIME
+/************************* CONFIG *************************/
+
+while {debugMonitor} do {
+
+	_time = (round(_restartTime-(serverTime)/60)); 	//Want it to count up instead of down? use _time = (round serverTime)/60;
 	_hours = (floor(_time/60));
 	_minutes = (_time - (_hours * 60));
 	
@@ -30,7 +34,7 @@ while {debugMonitor} do
 	//<t size..... lines below format: color='#xxxxxx'
 	
 	// You can delete any of the <t size..... lines that you do not want
-	// THE LAST LINE MUST HAVE A ,
+	// THE LAST LINE MUST HAVE A ",
 	hintSilent parseText format ["
 		<t size='1.25' font='Bitstream' align='center' color='#5882FA'>%1</t><br/>
 		<t size='1.05' font='Bitstream' align='center' color='#5882FA'>%2</t><br/> 
@@ -44,20 +48,20 @@ while {debugMonitor} do
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'>FPS: </t><t size='0.95' font='Bitstream' align='right'>%9</t><br/>
 		<t size='0.95' font='Bitstream' align='left' color='#FFBF00'></t><t size='0.95 'font='Bitstream' align='right'></t><br/>
 		<t size='1.15' font='Bitstream'align='center' color='#5882FA'>%10</t><br/>
-		<t size='1.15' font='Bitstream'align='center' color='#5882FA'>Server restart in %11:%12</t><br/>", //ONLY last line needs the ,
+		<t size='1.15' font='Bitstream'align='center' color='#5882FA'>Server restart in %11:%12</t><br/>", //ONLY last line needs the ",
 			
-		_serverTitle, // Used on line 35 for server title
-		_serverSubtitle, // Used on line 36 for server subtitle
-		(count playableUnits), // Used on line 38 for player count
-		(player getVariable['humanKills', 0]), // Used on line 39 for murder count
-		(player getVariable['banditKills', 0]), // Used on line 40 for bandit kill count
-		(player getVariable['zombieKills', 0]), // Used on line 41 for zombie kill count
-		(player getVariable['humanity', 0]), // Used on line 42 for humanity count
-		(player getVariable['USEC_BloodQty', r_player_blood]), // Used on line 43 for player blood amount
-		(round diag_fps), // Used on line 44 for frames per second
-		_teamspeak, // Used on line 46 for frames per second
-		_hours, // Used on line 47 to display hours
-		_minutes // Used on line 47 to display minutes
+		_serverTitle, // Used on line 40 for server title
+		_serverSubtitle, // Used on line 41 for server subtitle
+		(count playableUnits), // Used on line 43 for player count
+		(player getVariable['humanKills', 0]), // Used on line 44 for murder count
+		(player getVariable['banditKills', 0]), // Used on line 45 for bandit kill count
+		(player getVariable['zombieKills', 0]), // Used on line 46 for zombie kill count
+		(player getVariable['humanity', 0]), // Used on line 47 for humanity count
+		(player getVariable['USEC_BloodQty', r_player_blood]), // Used on line 48 for player blood amount
+		(round diag_fps), // Used on line 49 for frames per second
+		_teamspeak, // Used on line 51 for frames per second
+		_hours, // Used on line 52 to display hours
+		_minutes // Used on line 52 to display minutes
 	];
 	
 	//Don't modify this part

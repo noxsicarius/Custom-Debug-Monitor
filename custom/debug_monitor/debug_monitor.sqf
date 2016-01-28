@@ -3,8 +3,8 @@ private["_serverTitle","_serverSubtitle","_teamspeak","_time","_hours","_minutes
 /************************* CONFIG *************************/
 
 	_serverTitle = "SERVER NAME HERE";
-	_serverSubtitle = "WEBSITE/MESSAGE HERE"; // DELETE line 41 if you don't want this to show
-	_teamspeak = "Teamspeak: TEAMSPEAK IP HERE"; // DELETE line 51 if you don't want this to show
+	_serverSubtitle = "WEBSITE/MESSAGE HERE"; // DELETE line 40 if you don't want this to show
+	_teamspeak = "Teamspeak: TEAMSPEAK IP HERE"; // DELETE line 50 if you don't want this to show
 	_restartTime = 180 //total time before server restart (3hrs = 180 minutes)
 	
 /************************* CONFIG *************************/

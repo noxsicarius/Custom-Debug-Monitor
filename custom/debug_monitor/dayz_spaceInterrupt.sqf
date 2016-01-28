@@ -84,6 +84,14 @@ if (_dikCode in actionKeys "MoveLeft") exitWith {r_interrupt = true; if (DZE_Sur
 if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
 if (_dikCode in actionKeys "MoveBack") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
 
+//Prevent exploit of glitching through doors
+if (_dikCode in actionKeys "Prone") then {
+	_doors = (position player) nearEntities [DZE_DoorsLocked, 3];
+	if (count _doors > 0) then {
+		_handled = true;
+	};
+};
+
 //Prevent exploit of drag body
 if ((_dikCode in actionKeys "Prone") && r_drag_sqf) exitWith { force_dropBody = true; };
 if ((_dikCode in actionKeys "Crouch") && r_drag_sqf) exitWith { force_dropBody = true; };
@@ -104,7 +112,7 @@ if (_dikCode in (actionKeys "GetOver")) then {
 		_handled = true;
 		DZE_PZATTACK = true;
 	} else {
-		_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
+		_nearbyObjects = (position player) nearEntities [dayz_disallowedVault, 8];
 		if (count _nearbyObjects > 0) then {
 			if((diag_tickTime - dayz_lastCheckBit > 4)) then {
 				[objNull, player, rSwitchMove,"GetOver"] call RE;
@@ -121,11 +129,11 @@ if (_dikCode in (actionKeys "GetOver")) then {
 if (_dikCode == 210) then {
 	if (isNil 'debugMonitor') then {
 		debugMonitor = true;
-		_nill = execvm "custom\debug_monitor.sqf";
+		_nill = execvm "custom\debug_monitor\debug_monitor.sqf";
 	} else {
 		debugMonitor = !debugMonitor;
 		hintSilent '';
-		_nill = execvm "custom\debug_monitor.sqf";
+		_nill = execvm "custom\debug_monitor\debug_monitor.sqf";
 	};
 };
 
@@ -146,13 +154,10 @@ if (_dikCode in actionKeys "Chat" && (diag_tickTime - dayz_lastCheckBit > 10)) t
 	dayz_lastCheckBit = diag_tickTime;
 	[player,15,false,(getPosATL player)] spawn player_alertZombies;
 };
-
-/*
 if (_dikCode in actionKeys "User20" && (diag_tickTime - dayz_lastCheckBit > 5)) then {
 	dayz_lastCheckBit = diag_tickTime;
 	_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 };
-*/
 
 // numpad 8 0x48 now pgup 0xC9 1
 if ((_dikCode == 0xC9 && (!_alt || !_ctrl)) || (_dikCode in actionKeys "User15")) then {
@@ -197,6 +202,11 @@ if (_dikCode == 0x12 || (_dikCode in actionKeys "User18")) then {
 // numpad 5 0x4C now space 0x39
 if (_dikCode == 0x39 || (_dikCode in actionKeys "User19")) then {
 	DZE_5 = true;
+};
+
+// F key
+if ((_dikCode == 0x21 && (!_alt && !_ctrl)) || (_dikCode in actionKeys "User6")) then {
+	DZE_F = true;
 };
 
 _handled

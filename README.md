@@ -72,7 +72,19 @@ For any version before 2016
 1. Copy the ***custom folder*** (in the download) into your mission folder.
 
 1. Navigate to your mission folder and open the ***init.sqf***
-	Find this line:
+1. Find this line:
+
+	~~~~java
+	//Load in compiled functions
+	~~~~	
+	
+	and tplace this ***ABOVE*** it:
+	
+	~~~~java
+	debugMonitor = true;
+	~~~~
+	
+1. Find this line:
 
 	~~~~java
 	progressLoadingScreen 1.0;
@@ -87,10 +99,7 @@ For any version before 2016
 1. Open the ***init.sqf*** in the root of your mission folder and paste the following at the bottom of the if(!isDedicated) code:
 
 	~~~~java
-	if (isNil 'debugMonitor') then {
-		debugMonitor = true;
-		_nill = execvm "custom\debug_monitor\debug_monitor.sqf";
-	};
+	_nill = execvm "custom\debug_monitor\debug_monitor.sqf";
 	~~~~
 
 	It should now look like this:
@@ -98,14 +107,9 @@ For any version before 2016
 	~~~~java
 	if (!isDedicated) then {
 		
-		
 		**Some code found here**
 		
-		
-		if (isNil 'debugMonitor') then {
-			debugMonitor = true;
-			_nill = execvm "custom\debug_monitor\debug_monitor.sqf";
-		};
+		_nill = execvm "custom\debug_monitor\debug_monitor.sqf";
 	};
 	~~~~
 	
